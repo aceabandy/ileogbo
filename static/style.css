@@ -1,0 +1,202 @@
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 991.98px) {
+    .navbar-nav {
+      text-align: center;
+      width: 100%;
+    }
+    .navbar-nav .nav-item {
+      float: none;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav {
+      margin-left: auto;
+    }
+  }
+  
+  /* Style the circular indicators */
+  .owl-dots {
+      text-align: center;
+      margin-top: 20px;
+        }
+    
+        .owl-dot {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #888;
+          margin: 0 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+    
+        .owl-dot.active {
+          background-color: #555;
+        }
+    
+        /* Style the text */
+        .slide-text {
+          color: black;
+          text-align: center;
+          
+          
+        }
+    
+        /* Style the images */
+        .item img {
+          width: 100%;
+          height: 75vh;
+          object-fit: cover;
+          object-position: center;
+        }
+        .slider-item {
+          display: flex;
+          align-items: center;
+        }
+        .slider-item img {
+          max-width: 200px; /* Adjust image width as needed */
+          border-radius: 50%; /* Rounded corners */
+          margin-right: 20px; /* Space between image and text */
+          object-fit: cover;
+          object-position: center;
+          height: 40vh;
+          width: auto;
+        }
+        .slider-text {
+          flex-grow: 1; /* Text takes remaining space */
+        }
+        .slider-text h3 {
+          margin-top: 0; /* Remove top margin for h3 */
+        }
+  
+        .slider-text {
+          flex-grow: 1; /* Text takes remaining space */
+        }
+        .slider-text h3 {
+          margin-top: 0; /* Remove top margin for h3 */
+        }
+        
+        @media (max-width: 767px) {
+          .slider-item {
+            flex-direction: column; /* Change to column layout on small screens */
+            text-align: center; /* Center-align content on small screens */
+          }
+          .slider-item img {
+            margin-bottom: 20px; /* Add space between image and text on small screens */
+          }
+        }
+  
+        .slider-item .circular-image {
+    width: 100%;
+    height: 100vh; /* Set the height to cover the entire screen */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Make the image circular */
+  }
+  
+  .slider-item .circular-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .testimonial {
+      padding: 80px 0;
+  }
+  .sec-heading {
+      margin-bottom: 60px;
+  }
+  .sec-heading h6 {
+      font-family: allura;
+      font-weight: 900;
+      font-size: 50px;
+  }
+  .single-box {
+      border: 3px solid #e6f0fa;
+      padding: 50px 30px 40px;
+      border-radius: 20px;
+      background: #fff;
+  }
+  .img-area {
+      margin: 45px 0 20px;
+  }
+  .single-box img {
+      max-width: 100px;
+      border-radius: 50%;
+      margin: 0 auto
+  }
+  .single-box h4 {
+      font-weight: 600;
+      margin: 0;
+      font-family: 'Allura', cursive;
+      font-size: 35px;
+  }
+  .single-box {
+      overflow: hidden
+  }
+  .single-box .img-area {
+      width: 30%;
+      float: left;
+      margin: 0
+  }
+  .single-box .content {
+      width: 70%;
+      float: left;
+      padding-left: 10px
+  }
+  .single-box p {
+      margin: 10px 0 25px;
+      line-height: 2.3;
+  }
+  .testi-carousel-three .single-box {
+      border: 0;
+      padding: 0 50px;
+  }
+  .testi-carousel .owl-dots, .clients-carousel .owl-dots, .testi-carousel-three .owl-dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -60px;
+      text-align: center;
+      width: 100%;
+  }
+  .testi-carousel .owl-dot, .clients-carousel .owl-dot, .testi-carousel-three .owl-dot {
+      width: 16px;
+      height: 16px;
+      background-color: #ddd;
+      display: inline-block;
+      margin: 0 6px;
+      text-align: center;
+      border-radius: 50%;
+  }
+  .testi-carousel .owl-dot.active, .clients-carousel .owl-dot.active, .testi-carousel-three .owl-dot.active {
+      background-color: blueviolet;
+  }
+  @media only screen and (min-width: 360px) and (max-width: 479px) {
+      .testimonial {
+          padding: 70px 0 130px;
+      }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 359px) {
+      .testimonial {
+          padding: 70px 0 130px;
+      }
+      .single-box {
+          padding: 50px 0 40px;
+      }
+      .single-box .img-area {
+          width: 100%;
+          float: none;
+      }
+      .single-box .content {
+          width: 100%;
+          float: none;
+      }
+  }

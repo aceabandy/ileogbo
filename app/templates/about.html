@@ -1,0 +1,301 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ileogbo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  
+  <!-- Custom styles for this template -->
+  <style>
+    /* Add custom styles here */
+    .about_section {
+      padding: 50px 0;
+    }
+    .about_img img {
+      max-width: 100%;
+      height: auto;
+    }
+    .about_taital {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .about_text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .about_bt a {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .about_bt a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <style>
+    /* footer section start */
+  
+  .footer_section {
+      width: 100%;
+      float: left;
+      background-color: #2a2a2a;
+      height: auto;
+      padding-bottom: 50px;
+  }
+  
+  .footer_section_2 {
+      width: 100%;
+      float: left;
+  }
+  
+  .useful_text {
+      width: 100%;
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: bold;
+  }
+  
+  .lorem_text {
+      width: 80%;
+      float: left;
+      font-size: 16px;
+      color: #ffffff;
+      margin: 0px;
+  }
+  
+  .location_text {
+      width: 100%;
+      float: left;
+  }
+  
+  .location_text a {
+      width: 100%;
+      float: left;
+      color: #ffffff;
+      font-size: 16px;
+      text-decoration: none;
+  }
+  
+  .location_text a:hover {
+      color: #812928;
+  }
+  
+  span.padding_left_15 {
+      padding-left: 20px;
+  }
+  
+  .footer_menu {
+      width: 100%;
+      float: left;
+  }
+  
+  .footer_menu ul {
+      margin: 0px;
+      padding: 0px;
+  }
+  
+  .footer_menu li a {
+      font-size: 16px;
+      color: #ffffff;
+      text-decoration: none;
+  }
+  
+  .footer_menu li.active a {
+      color: #812928;
+  }
+  
+  .footer_menu li a:hover {
+      color: #812928;
+  }
+  
+  .social_icon {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      margin-top: 40px;
+  }
+  
+  .social_icon ul {
+      margin: 0px;
+      padding: 0px;
+      display: inline-block;
+  }
+  
+  .social_icon li {
+      float: left;
+  }
+  
+  .social_icon li a {
+      float: left;
+      padding: 5px 15px;
+      background-color: #ffffff;
+      color: #000;
+      border-radius: 100%;
+      font-size: 22px;
+      margin-right: 5px;
+      text-align: center;
+      margin-top: 10px;
+  }
+  
+  .social_icon li a:hover {
+      background-color: #812928;
+      color: #ffffff;
+  }
+  
+  .update_mail {
+      color: #918f8f;
+      width: 100%;
+      height: 55px;
+      font-size: 18px;
+      padding: 10px 20px 0px 20px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      display: block;
+      margin-top: 20px;
+  }
+  
+  .subscribe_bt {
+      width: 170px;
+      float: left;
+      padding-top: 30px;
+  }
+  
+  .subscribe_bt a {
+      width: 100%;
+      float: left;
+      color: #ffffff;
+      font-size: 16px;
+      padding: 10px 0px;
+      background-color: #812928;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
+  }
+  
+  .subscribe_bt a:hover {
+      color: #252525;
+      background-color: #ffffff;
+  }
+  
+  
+  /* footer section end */
+  
+  </style>
+  
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+    <nav style="height: 30px;background-color: #812928;">
+
+    </nav>
+    <nav style="background-color: lightgray;" class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'index' %}"><img src="https://i.ibb.co/R2Wzryd/segunlogo.png" width="100px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a style="font-size: 20px;" class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size: 20px;" class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size: 20px;" class="nav-link" href="{% url 'blog' %}">Blog</a>
+              </li>
+              <!-- Add more list items as needed -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+<!-- About Section -->
+<div class="about_section layout_padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <div class="about_img"><img src="https://i.ibb.co/R2Wzryd/segunlogo.png" width="230px" alt="Ileogbo Unity Forum"></div>
+         </div>
+         <div class="col-md-6">
+            <p>Welcome to the official website of the Ileogbo community. Ileogbo is a vibrant community located in [insert location here]. Our community is known for its rich culture, strong traditions, and warm hospitality.</p>
+            <p>This website serves as a platform to showcase the beauty of our community, share our history, and connect with both residents and visitors alike.</p>
+            <h3>Our Vision</h3>
+            <p>Our vision is to create a thriving and inclusive community that celebrates diversity, promotes sustainable development, and preserves our cultural heritage for future generations.</p>
+            <h3>Our Mission</h3>
+            <p>Our mission is to foster unity, economic empowerment, and social well-being among our residents through various initiatives and projects.</p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- footer section start -->
+<div class="footer_section layout_padding p-2">
+  <br>
+    <div class="container">
+       <div style="font-family: 'Montserrat', sans-serif;" class="footer_section_2">
+          <div class="row">
+             <div  class="col-lg-3 col-sm-6">
+              <img src="https://i.ibb.co/R2Wzryd/segunlogo.png"  width="200px">
+             </div>
+             <div class="col-lg-3 col-sm-6">
+                <h2 class="useful_text">Useful link </h2>
+                <div class="footer_menu">
+                   <ul>
+                      <li ><a href="{% url 'index' %}">Home</a></li>
+                      <br>
+                      <li class="active"><a href="{% url 'about' %}">About</a></li>
+                      <br>
+                      <li><a href="{% url 'blog' %}">Blog</a></li>
+                   </ul>
+                </div>
+             </div>
+             <div class="col-lg-3 col-sm-6">
+                <h2 class="useful_text">Contact Information</h2>
+                <div class="location_text"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Ileogbo, Nigeria</span></a></div>
+                <br>
+                <br>
+                <div class="location_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">+123 456 7890</span></a></div>
+                <br>
+                <br>
+                <div class="location_text"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">info@ileogbo.com</span></a></div>
+             </div>
+             <div class="col-lg-3 col-sm-6">
+                <h2 class="useful_text">Newsletter</h2>
+                <div class="form-group">
+                   <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
+                   <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="social_icon">
+          <ul>
+             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+             <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+       </div>
+    </div>
+ </div>
+ <!-- footer section end --> 
+
+</body>
+</html>

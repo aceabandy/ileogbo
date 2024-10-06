@@ -1,0 +1,38 @@
+<div class="col-md-9">
+    <section class="blog-section">
+      {% for post in posts %}
+          {% if forloop.first %}
+              <div class="blog-post large-post">
+                  <img src="{{ post.image.url }}" style="width: 100%;" class="large-img mb-3" alt="{{ post.title }}">
+          {% else %}
+              <div class="blog-post">
+                  <img src="{{ post.image.url }}" class="small-img mb-3" alt="{{ post.title }}">
+          {% endif %}
+          <h5 class="card-title">{{ post.title }}</h5>
+          <p style="font-size: 14.1px;color: #878787;line-height: 2.2;font-weight: 500;" class="card-text">{{ post.content|truncatechars:100 }}</p>
+          <p class="card-text text-muted">Posted by {{ post.author.username }}  on <br> {{ post.published_date }}</p>
+          <a href="{% url 'teaching_details' pk=post.pk %}" style="background-color: #d82a4e;color:white;" class="btn btn">Read More</a>
+      </div>
+      {% endfor %}
+  </section>
+  
+
+      <!-- Pagination links -->
+      <div class="pagination">
+          <span class="step-links">
+              {% if posts.has_previous %}
+                  <a href="?page=1">&laquo; first</a>
+                  <a href="?page={{ posts.previous_page_number }}">previous</a>
+              {% endif %}
+
+              <span class="current">
+                  Page {{ posts.number }} of {{ posts.paginator.num_pages }}.
+              </span>
+
+              {% if posts.has_next %}
+                  <a href="?page={{ posts.next_page_number }}">next</a>
+                  <a href="?page={{ posts.paginator.num_pages }}">last &raquo;</a>
+              {% endif %}
+          </span>
+      </div>
+  </div>

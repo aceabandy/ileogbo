@@ -1,0 +1,669 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ileogbo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f3b99b4317.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="{% static 'style.css' %}">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body style="font-family: 'Montserrat', sans-serif;">
+<style>
+  /* footer section start */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #2a2a2a;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.footer_section_2 {
+    width: 100%;
+    float: left;
+}
+
+.useful_text {
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.lorem_text {
+    width: 80%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.location_text {
+    width: 100%;
+    float: left;
+}
+
+.location_text a {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.location_text a:hover {
+    color: #812928;
+}
+
+span.padding_left_15 {
+    padding-left: 20px;
+}
+
+.footer_menu {
+    width: 100%;
+    float: left;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_menu li a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer_menu li.active a {
+    color: #812928;
+}
+
+.footer_menu li a:hover {
+    color: #812928;
+}
+
+.social_icon {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.social_icon li {
+    float: left;
+}
+
+.social_icon li a {
+    float: left;
+    padding: 5px 15px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 100%;
+    font-size: 22px;
+    margin-right: 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social_icon li a:hover {
+    background-color: #812928;
+    color: #ffffff;
+}
+
+.update_mail {
+    color: #918f8f;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 10px 20px 0px 20px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-top: 20px;
+}
+
+.subscribe_bt {
+    width: 170px;
+    float: left;
+    padding-top: 30px;
+}
+
+.subscribe_bt a {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 0px;
+    background-color: #812928;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+}
+
+.subscribe_bt a:hover {
+    color: #252525;
+    background-color: #ffffff;
+}
+.small-img {
+    max-width: 95%; /* Adjust the width to fit the container */
+    height: auto;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+.blog-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-post {
+    flex-basis: calc(50% - 15px); /* Adjust the width of each post */
+    margin-bottom: 30px;
+}
+
+.large-post {
+    flex-basis: 100%;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.category-dropdown {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.card-links {
+    padding: 10px;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f8f9fa; /* Adjust background color as needed */
+    padding: 20px;
+    overflow-y: auto;
+}
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        overflow-y: initial;
+    }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* footer section end */
+.small-img {
+  width: 100%; /* Adjust the width to fit the container */
+  
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover;
+  object-position: center;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
+}
+
+.blog-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  
+}
+
+.blog-post {
+  flex-basis: calc(50% - 15px); /* Adjust the width of each post */
+  margin-bottom: 30px;
+}
+
+.large-post {
+  flex-basis: 100%;
+}
+
+</style>
+
+    <nav style="height: 30px;background-color: #812928;">
+
+    </nav>
+    <nav style="background-color: lightgray;" class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'index' %}"><img src="https://i.ibb.co/R2Wzryd/segunlogo.png" width="100px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a style="font-size: 20px;" class="nav-link" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size: 20px;" class="nav-link" href="{% url 'about' %}">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a style="font-size: 20px;" class="nav-link" href="{% url 'blog' %}">Blog</a>
+              </li>
+              <!-- Add more list items as needed -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--section1 -->
+
+      
+      <section class="">
+        <div class=" justify-content-center">
+          <div class="">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img class="img-fluid" src="https://i.ibb.co/10X7Nxm/Whats-App-Image-2024-03-16-at-06-25-58-1cac2318.jpg" alt="Image 1">
+                <div class="slide-text">
+                  <h3>The palace of Olu of Ileogbo</h3>
+                  <p class="text-muted">ILEOGBO</p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="https://i.ibb.co/tBCV2hj/landmark5.jpg" alt="Image 2">
+                <div class="slide-text">
+                  <h3></h3>
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="item">
+                <img class="img-fluid" src="https://i.ibb.co/zhF3mbz/landmark10.jpg" alt="Image 3">
+                <div class="slide-text">
+                  <h3>The historical Ore Tree shrine</h3>
+                  <p class="text-muted">ILEOGBO</p>
+                </div>
+              </div>
+              <!-- Add more items for additional images with text -->
+              <div class="item">
+                  <img class="img-fluid" src="https://i.ibb.co/cYxdJgN/landmark9.jpg" alt="Image 3">
+                  <div class="slide-text">
+                    <h3>Ileogbo Central Mosque</h3>
+                    <p class="text-muted">ILEOGBO</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <img class="img-fluid" src="https://i.ibb.co/zsHkHyh/landmark8.jpg" alt="Image 3">
+                  <div class="slide-text">
+                    <h3>St. Mary's African Church Primary School </h3>
+                    <p class="text-muted">The First Primary School ILEOGBO</p>
+                  </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-fluid" src="https://i.ibb.co/z5My0Qc/landmark7.jpg" alt="Image 3">
+                    <div class="slide-text">
+                      <h3>The Esu Shrine in ileogbo</h3>
+                      <p class="text-muted">ILEOGBO</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img class="img-fluid" src="https://i.ibb.co/gmLvKw1/landmark3.jpg" alt="Image 3">
+                    <div class="slide-text">
+                      <h3>Community High School</h3>
+                      <p class="text-muted">ILEOGBO</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img class="img-fluid" src="https://i.ibb.co/tH92x5H/landmark4.jpg" alt="Image 3">
+                    <div class="slide-text">
+                      <h3>St. Mary's African Church </h3>
+                      <p class="text-muted">ILEOGBO</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img class="img-fluid" src="https://i.ibb.co/d2v9FW1/landmark1.jpg" alt="Image 3">
+                    <div class="slide-text">
+                      <h3>Luther King's college Ileogbo</h3>
+                      <p class="text-muted">THE FIRST SECONDARY SCHOOL</p>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <img class="img-fluid" src="https://i.ibb.co/Nt9YHFJ/landmark2.jpg" alt="Image 3">
+                    <div class="slide-text">
+                      <h3>Lanreleke Sports Academy</h3>
+                      <p class="text-muted">ILEOGBO</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <!-- Owl Carousel JS -->
+
+<script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        autoplay: true, // Enable automatic sliding
+        autoplayTimeout: 3000, // Set slide duration in milliseconds
+        autoplayHoverPause: true // Pause sliding on hover
+      });
+    });
+  </script>
+<section class="p-3 container-fluid" style="background-color: lightgray;">
+    <h1 class="text-center" >Our insights</h1>
+    {% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9">
+          <section class="container my-5">
+            <div class="row">
+              {% for post in posts %}
+              <div class="col-md-6 mb-4">
+                <div class="blog-post">
+                <img src="{{ post.image.url }}"  class="small-img img-fluid" alt="{{ post.title }}">
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.content|slice:":30" }}</p>
+                <a href="{% url 'blog_detail' pk=post.pk %}" class="btn btn" style="background-color: #812928;color:white;">Read More</a>
+              </div>
+            </div>
+              {% endfor %}
+            </div>
+            <div class="">
+              <a href="{% url 'blog' %}" class="btn btn" style="background-color: #812928;color:white;">View More Posts <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </section>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="sidebar">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Search and Categories
+                    </div>
+                    <div class="card-body">
+                        <form class="search-form mb-3" action="{% url 'blog' %}" method="GET">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search..." name="q">
+                                <button class="btn btn-outline-secondary" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="category-dropdown">
+                            <div class="card card-links">
+                                <div class="card-body">
+                                    <h5 class="card-title">Categories</h5>
+                                    <ul class="list-unstyled">
+                                        <li><a style="text-decoration: none;color: grey;" href="#">Category 1</a></li>
+                                        <li><a style="text-decoration: none;color: grey;" href="#">Category 2</a></li>
+                                        <!-- Add more category links -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<hr>
+</section>
+
+  <!--section3-->
+  <section class="testimonial ">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+					<div class="sec-heading text-center">
+						<h6 style="font-family: 'Montserrat', sans-serif;">" Executives "</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="clients-carousel owl-carousel">
+					<div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/9ZMbHBD/profile1.jpg"></div>
+						<div class="content">
+							<p>"Alhaji Dele Ayanboye"</p>
+							<h4></h4>
+							<h6>Treasurer</h6>
+						</div>
+					</div>
+					<div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/tYrk2kt/IMG-20240305-WA0037.jpg"></div>
+						<div class="content">
+							<p>"Comr. Kunle Awolowo"</p>
+							<h4></h4>
+							<h6>IUF General Secretary</h6>
+						</div>
+					</div>
+					<div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/bzCJCxD/profile2.jpg"></div>
+						<div class="content">
+							<p>"Ayotunde Adedokun"</p>
+							<h4>PhD</h4>
+							<h6>Social/Publicity Secretary</h6>
+						</div>
+					</div>
+					<div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/TrMLcm7/profile4.jpg"></div>
+						<div class="content">
+							<span class="rating-star"><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></span>
+							<p>"His Royal Majesty Oba Abeeb Adetoyese Agbaje"</p>
+							<h4></h4>
+							<h6>Arowookunjoye ii</h6>
+						</div>
+					</div>
+
+          <div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/ZVC6v4L/profile5.jpg"></div>
+						<div class="content">
+							<span class="rating-star"><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></span>
+							<p>"Mr. Mutairu Salawu"</p>
+							<h4></h4>
+							<h6>Asst. General Secretary</h6>
+						</div>
+					</div>
+
+          <div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/8DnkvfX/profile6.jpg"></div>
+						<div class="content">
+							<span class="rating-star"><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></span>
+							<p>"Mrs. Motunrayo Ajayi"</p>
+							<h4></h4>
+							<h6>Vice President</h6>
+						</div>
+					</div>
+
+          <div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/4JbwXw6/profile8.jpg"></div>
+						<div class="content">
+							<span class="rating-star"><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></span>
+							<p>"Mr. Bayo Olosunde"</p>
+							<h4></h4>
+							<h6>Asst. Financial Secretary</h6>
+						</div>
+					</div>
+
+          <div class="single-box">
+						<div class="img-area"><img alt="" class="img-fluid" src="https://i.ibb.co/ZM6trdy/profile7.jpg"></div>
+						<div class="content">
+							<span class="rating-star"><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i><i class="icofont-star"></i></span>
+							<p>"Mr. Munir Alabi"</p>
+							<h4></h4>
+							<h6>Whip</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <!-- jQuery -->
+  
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script>
+	       $('.clients-carousel').owlCarousel({
+	           loop: true,
+	           nav: false,
+	           autoplay: true,
+	           autoplayTimeout: 5000,
+	           animateOut: 'fadeOut',
+	           animateIn: 'fadeIn',
+	           smartSpeed: 450,
+	           margin: 30,
+	           responsive: {
+	               0: {
+	                   items: 1
+	               },
+	               768: {
+	                   items: 2
+	               },
+	               991: {
+	                   items: 2
+	               },
+	               1200: {
+	                   items: 2
+	               },
+	               1920: {
+	                   items: 2
+	               }
+	           }
+	       });
+	</script>
+
+  <!--section4-->
+  
+    <section class="container ">
+      <center>
+              <div>
+        <!--iframe1-->
+        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--iframe2-->
+        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!--iframe3-->
+        <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      </center>
+
+    </section>
+    <br>
+    <!--
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-4 mb-4 mb-lg-0">
+            <h5 style="font-size: 30px;">About Ileogbo</h5>
+            <p>Ileogbo is a vibrant town located in Nigeria with a rich cultural heritage and historical significance. Explore our website to learn more about our community.</p>
+          </div>
+          <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-4 mb-4 mb-lg-0">
+            <h5 style="font-size: 30px;">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a style="text-decoration: none;" href="#">Home</a></li>
+              <br>
+              <li><a style="text-decoration: none;" href="#">About Us</a></li>
+              <br>
+              <li><a style="text-decoration: none;" href="#">Blog</a></li>
+              
+            </ul>
+          </div>
+          <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-4">
+            <h5 style="font-size: 30px;">Contact Information</h5>
+            <p><i class="fas fa-map-marker-alt"></i> Ileogbo, Nigeria</p>
+            <p><i class="fas fa-envelope"></i> info@ileogbo.com</p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+          </div>
+        </div>
+     
+      </div>
+    </footer>
+  -->
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding ">
+      <br>
+      <div class="container">
+         <div class="footer_section_2">
+            <div class="row">
+               <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-3 col-sm-6">
+                <img src="https://i.ibb.co/R2Wzryd/segunlogo.png"  width="200px">
+               </div>
+               <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Useful link </h2>
+                  <div style="font-family: 'Montserrat', sans-serif;" class="footer_menu">
+                     <ul>
+                        <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                        <br>
+                        <li ><a href="{% url 'about' %}">About</a></li>
+                        <br>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Contact Information</h2>
+                  <div class="location_text"><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_15">Ileogbo, Nigeria</span></a></div>
+                  <br>
+                  <br>
+                  <div class="location_text"><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_15">+123 456 7890</span></a></div>
+                  <br>
+                  <br>
+                  <div class="location_text"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_15">info@ileogbo.com</span></a></div>
+               </div>
+               <div style="font-family: 'Montserrat', sans-serif;" class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Newsletter</h2>
+                  <div class="form-group">
+                     <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
+                     <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="social_icon">
+            <ul>
+               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->   
+</body>
+</html>
